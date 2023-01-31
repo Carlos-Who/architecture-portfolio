@@ -1,0 +1,64 @@
+
+// - [Bebas Neue] -
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+// - [Lato] -
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+
+
+
+// --- Main Colors --- //
+$bg-primary-clr: #151517;
+$bg-secondary-clr: #25232A;
+
+
+
+// --- Text colors --- //
+
+// --- Text Size --- //
+$titles-size-mob: 2.8rem;
+$paragraphs-size-mob: 1rem;
+
+/*--------------------.
+|       - Text -      |
+'--------------------*/
+// » Fonts
+$font-primary: 'Bebas Neue', cursive;
+$font-secondary: 'Lato', sans-serif;
+// » Titles
+$titles-primary-clr: #FDFDFD;
+// » Paragraphs
+$paragraphs-secondary-clr: #E6E6E6;
+
+
+/*--------------------.
+|     - SideBar -     |
+'--------------------*/
+// » Background color
+$bg-sidebar-clr: #232425;
+// » Sidebar Size » Recommended size between (30vw - 70vw)
+$sidebar-size: 70vw;
+// » Hamburger menu
+$hamburger-stroke-clr: #FDFDFD;
+$hamburger-bg-clr: #2c3138;
+$hamburger-circle-size: 3.5rem;
+// » Menu item color
+$menu-items-primary-clr: #FDFDFD;
+// » Footer color
+$footer-bg-clr: #2e2e2e;
+
+/*--------------------.
+|     - Buttons -     |
+'--------------------*/
+// » Neutral buttons
+$btn-font-primary-clr: #FDFDFD;
+$btn-bg-primary-clr: #21464d;
+
+// » Accent buttons
+
+

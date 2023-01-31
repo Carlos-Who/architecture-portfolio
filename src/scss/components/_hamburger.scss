@@ -1,0 +1,50 @@
+
+@use "./src/scss/theme/dark-theme.scss" as *;
+
+.hamburger {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 900ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  //background-color: chartreuse;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 800ms, stroke-dashoffset 400ms;
+  stroke: $hamburger-stroke-clr;
+  stroke-width:5.5;
+  stroke-linecap:butt;
+}
+
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+  stroke-dasharray: 30 142;
+  transform-origin: 50%;
+  transition: transform 900ms;
+}
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 800ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+.ham8.active .middle {
+  stroke-dasharray: 40;
+  transform: rotate(90deg);
+}
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}

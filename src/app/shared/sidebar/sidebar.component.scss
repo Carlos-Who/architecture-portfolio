@@ -1,0 +1,94 @@
+
+@use "./src/scss/theme/dark-theme.scss" as *;
+
+.sidebar-desk-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 28vw;
+  min-height: 100vh;
+  background-color: $bg-sidebar-clr;
+  //border: 1px solid aqua;
+}
+
+
+
+.nav-item-desk {
+  display: block;
+  color: $menu-items-primary-clr;
+  font-family: $font-primary;
+  font-size: 2rem;
+
+  padding-top: .1em;
+  padding-bottom: .1em;
+  padding-left: calc(100% / 3.33);
+
+  transition: background-color .5s ease-in-out;
+}
+.nav-item-desk:hover {
+  background-color: rgba(33, 70, 77, 0.31);
+
+}
+
+.active-item {
+  color: #ac9d77;
+}
+
+.footer-desk-container {
+  justify-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.3em 0;
+  background-color: $footer-bg-clr;
+
+  p {
+    color: #909090;
+    font-family: $font-secondary;
+    font-size: .8rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1128px) {
+  .sidebar-desk-container {
+    width: 24vw;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .sidebar-desk-container {
+    width: 20vw;
+  }
+
+  .nav-item-desk {
+    font-size: clamp(1.7rem, 2.1vw,3rem);
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .sidebar-desk-container {
+    width: 22vw;
+    //background-color: tomato;
+  }
+
+  .nav-item-desk {
+    font-size: clamp(1.7rem, 2.1vw,3rem);
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .sidebar-desk-container {
+    width: 17vw;
+    //background-color: tomato;
+  }
+  .nav-item-desk {
+    font-size: clamp(1.7rem, 1.8vw, 3rem);
+    letter-spacing: 1px;
+  }
+
+}

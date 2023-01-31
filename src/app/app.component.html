@@ -1,3 +1,14 @@
 
 
-<router-outlet></router-outlet>
+<div class="app-container">
+  <div class="sidebar-container">
+    <app-sidebar class="app-sidebar"></app-sidebar>
+    <app-sidebar-mob class="app-sidebar-mob"></app-sidebar-mob>
+  </div>
+
+  <div class="main-container">
+    <div class="phantom-container"></div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

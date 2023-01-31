@@ -1,0 +1,14 @@
+
+@use "./src/scss/components/_neutral-button.scss" as *;
+
+.home-container {
+  padding: 0 1.6rem;
+  padding-bottom: 1em;
+}
+
+.bubble-image {
+  width: 20rem;
+  margin: 0 auto;
+  padding: 0;
+  background-color: mediumpurple;
+}

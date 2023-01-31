@@ -1,0 +1,88 @@
+
+@use "./src/scss/theme/dark-theme.scss" as *;
+
+
+.app-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  min-height: 100vh;
+  //background-color: saddlebrown;
+}
+
+.app-sidebar {
+  display: none;
+}
+.app-sidebar-mob {
+}
+
+.sidebar-container {
+  // [!] Set width "100px" to watch the container - Set "auto" default [!]
+  width: auto;
+  height: 100vh; // <- TESTING - TESTING - TESTING - TESTING
+  max-height: 100vh;
+
+  // [!] Debug-Border [!]
+  //border: 1px solid red;
+  //background-color: darkgrey;
+}
+
+.main-container {
+  //position: relative;
+  max-width: 100vw; // <- THis property is in testing mode
+  max-height: 100vh;
+  //padding: 0 1.6em;
+  overflow-y: auto;
+
+
+  // [!] Debug-Border [!]
+  //border: 1px solid #74ff00;
+  //background-color: mediumpurple;
+}
+
+.title {
+  font-family: $font-primary;
+  font-size: 2.3rem;
+}
+
+p {
+  font-family: $font-secondary;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+
+.phantom-container {
+  //position: absolute;
+  position: sticky;
+  top: -10px;
+  //width: 100%;
+  height: 95px;
+  filter: blur(5px);
+  z-index: 2;
+  background: rgb(21,21,23);
+  background: linear-gradient(180deg, rgba(21,21,23,1) 59%, rgba(21,21,23,0.9444152661064426) 91%, rgba(0,0,0,0) 100%);
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .app-sidebar-mob {
+    display: none;
+    visibility: hidden;
+  }
+  .app-sidebar {
+    display: block;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

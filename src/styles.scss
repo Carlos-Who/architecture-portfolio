@@ -1,18 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
-
+@use "./src/scss/theme/dark-theme.scss" as *;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+html {
+  color: $titles-primary-clr;
+  background-color: $bg-primary-clr;
+}
 body {
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
 }
-
+//-
 a {
   text-decoration: none;
 }
@@ -23,3 +27,5 @@ a:visited {
 ul {
   list-style-type: none;
 }
+
+

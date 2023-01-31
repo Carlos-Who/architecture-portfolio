@@ -14,6 +14,10 @@ import { ContactComponent } from './contact/contact.component';
     PortfolioComponent,
     ContactComponent
   ],
+  exports: [
+    HomeComponent,
+    AboutComponent
+  ],
   imports: [
     CommonModule
   ]

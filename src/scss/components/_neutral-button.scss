@@ -1,0 +1,54 @@
+
+@use "./src/scss/theme/dark-theme.scss" as *;
+
+.neutral-btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: $btn-bg-primary-clr;
+  border: none;
+  color: $titles-primary-clr;
+  text-align: center;
+  font-size: .8rem;
+  padding: 1.1em;
+  width: 11rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  //margin: 5px;
+}
+
+.neutral-btn span {
+  font-family: $font-secondary;
+  text-transform: capitalize;
+  letter-spacing: .6px;
+  font-weight: 400;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.neutral-btn span:after {
+  content: '»';
+  line-height: 85%;
+  position: absolute;
+  font-family: $font-secondary;
+  font-size: 1.1rem;
+  opacity: 0;
+  top: 0;
+  padding-left: .5em;
+  right: -15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  //background-color: mediumpurple;
+}
+
+.neutral-btn:hover span {
+  padding-right: 15px;
+}
+
+.neutral-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}

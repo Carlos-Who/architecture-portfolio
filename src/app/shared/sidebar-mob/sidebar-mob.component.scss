@@ -1,0 +1,89 @@
+
+@use "./src/scss/theme/dark-theme.scss" as *;
+@use "src/scss/components/_hamburger.scss" as *;
+
+
+// This layer appears when the sidebar opens and cover the background behind.
+.phantom-sidebar {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: 100dvh;
+  z-index: 85;
+  background-color: #1b1b1c;
+}
+
+.sidebar-mob-container {
+  container-type: inline-size;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  min-width: 70vw; // <- ancho del sidebar
+  min-height: 100%;
+  background-color: $bg-sidebar-clr;
+}
+
+.hamburger-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 3%;
+  left: 107%;
+
+  width: $hamburger-circle-size;
+  height: $hamburger-circle-size;
+  padding: .2em;
+  border-radius: 50%;
+  background-color: $hamburger-bg-clr;
+}
+
+.sidebar-menu-mob {
+  //min-height: 100%;
+  //background-color: #800035;
+}
+
+.nav-item-mob {
+  display: block;
+  color: $menu-items-primary-clr;
+  font-family: $font-primary;
+  font-size: 1.8rem;
+
+  padding-top: .2em;
+  padding-bottom: .2em;
+  padding-left: calc(100% / 3.33);
+  //background-color: red;
+}
+
+.footer-mob-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1.3em 0;
+  background-color: $footer-bg-clr;
+
+  p {
+    color: #909090;
+    font-family: $font-secondary;
+    font-size: .8rem;
+    text-align: center;
+  }
+}
+
+@container (min-width: 260px) {
+  .nav-item-mob {
+    font-size: 2.2rem;
+    //background-color: mediumpurple;
+  }
+
+}
