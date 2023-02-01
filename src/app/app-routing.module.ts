@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./portfolio/home/home.component";
+import {PortfolioComponent} from "./portfolio/portfolio/portfolio.component";
+import {AboutComponent} from "./portfolio/about/about.component";
+import {ContactComponent} from "./portfolio/contact/contact.component";
 
 const routes: Routes = [
   {
@@ -9,8 +12,20 @@ const routes: Routes = [
     pathMatch: "full"
   },
   {
+    path: "portafolio",
+    component: PortfolioComponent
+  },
+  {
+    path: "acerca-de-mi",
+    component: AboutComponent
+  },
+  {
+    path: "contacto",
+    component: ContactComponent
+  },
+  {
     path: "**",
-    redirectTo: ""
+    redirectTo: "/"
   }
 ];
 

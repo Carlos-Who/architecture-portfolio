@@ -19,16 +19,16 @@
   <nav   class="menu-mob sidebar-menu-mob">
     <ul>
       <li>
-        <a href="#" (click)="toggleMenu()" class="anim-item nav-item-mob active-item">INICIO</a>
+        <a href="#" (click)="toggleMenu()" routerLink="/" routerLinkActive="active-item" [routerLinkActiveOptions]="{exact: true}" class="anim-item nav-item-mob">INICIO</a>
       </li>
       <li>
-        <a href="#" (click)="toggleMenu()" class="anim-item nav-item-mob">ACERCA DE MI</a>
+        <a href="#" (click)="toggleMenu()" routerLink="/acerca-de-mi" routerLinkActive="active-item" class="anim-item nav-item-mob">ACERCA DE MI</a>
       </li>
       <li>
-        <a href="#" (click)="toggleMenu()" class="anim-item nav-item-mob">PORTAFOLIO</a>
+        <a href="#" (click)="toggleMenu()" routerLink="/portafolio" routerLinkActive="active-item" class="anim-item nav-item-mob">PORTAFOLIO</a>
       </li>
       <li>
-        <a href="#" (click)="toggleMenu()" class="anim-item nav-item-mob">CONTACTO</a>
+        <a href="#" (click)="toggleMenu()" routerLink="/contacto" routerLinkActive="active-item" class="anim-item nav-item-mob">CONTACTO</a>
       </li>
     </ul>
   </nav>

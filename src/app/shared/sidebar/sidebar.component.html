@@ -3,16 +3,16 @@
   <nav   class="menu-container">
     <ul>
       <li>
-        <a href="#" class="nav-item-desk scale-up-center active-item">INICIO</a>
+        <a href="#" routerLink="/" routerLinkActive="active-item" [routerLinkActiveOptions]="{exact: true}" class="nav-item-desk">INICIO</a>
       </li>
       <li>
-        <a href="#" class="nav-item-desk">ACERCA DE MI</a>
+        <a href="#" routerLink="/acerca-de-mi" routerLinkActive="active-item" class="nav-item-desk">ACERCA DE MI</a>
       </li>
       <li>
-        <a href="#" class="nav-item-desk">PORTAFOLIO</a>
+        <a href="#" routerLink="/portafolio" routerLinkActive="active-item" class="nav-item-desk">PORTAFOLIO</a>
       </li>
       <li>
-        <a href="#" class="nav-item-desk">CONTACTO</a>
+        <a href="#" routerLink="/contacto" routerLinkActive="active-item" class="nav-item-desk">CONTACTO</a>
       </li>
     </ul>
   </nav>

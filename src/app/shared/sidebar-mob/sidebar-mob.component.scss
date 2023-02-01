@@ -65,6 +65,10 @@
   //background-color: red;
 }
 
+.active-item {
+  color: $menu-items-active-clr;
+}
+
 .footer-mob-container {
   position: fixed;
   bottom: 0;

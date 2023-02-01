@@ -16,10 +16,13 @@
 $bg-primary-clr: #151517;
 $bg-secondary-clr: #25232A;
 
-
+// » This container creates a blur effect when scrolling up,
+//   the size is the height this element has on the screen.
+$phantom-container-size-mob: 9%;
+$phantom-container-size-desk: 5%;
 
 // --- Text colors --- //
-
+$font-primary-clr: #F2F2F2;
 // --- Text Size --- //
 $titles-size-mob: 2.8rem;
 $paragraphs-size-mob: 1rem;
@@ -49,6 +52,8 @@ $hamburger-bg-clr: #2c3138;
 $hamburger-circle-size: 3.5rem;
 // » Menu item color
 $menu-items-primary-clr: #FDFDFD;
+// » Menu active item color
+$menu-items-active-clr: #be9d6a;
 // » Footer color
 $footer-bg-clr: #2e2e2e;
 
@@ -61,4 +66,33 @@ $btn-bg-primary-clr: #21464d;
 
 // » Accent buttons
 
+
+
+/*-----------------------------------------------------------.
+|                       - RESPONSIVE -                       |
+'-----------------------------------------------------------*/
+
+// » Tablet
+@media only screen and (min-width: 500px) {}
+
+// » Tablet (Large)
+@media only screen and (min-width: 600px) {}
+
+// » Laptop [-Small-]
+@media only screen and (min-width: 1024px) {}
+
+// » Laptop (13" Approx)
+@media only screen and (min-width: 1220px) {}
+
+// » Laptop (15" Approx)
+@media only screen and (min-width: 1440px) {}
+
+// » Laptop (16" Approx)
+@media only screen and (min-width: 1650px) {}
+
+// » Desktop (Medium)
+@media only screen and (min-width: 1900px) {}
+
+// » Desktop (Large)
+@media only screen and (min-width: 2500px) {}
 

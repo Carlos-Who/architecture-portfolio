@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarMobComponent } from './sidebar-mob/sidebar-mob.component';
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 
 
@@ -11,7 +12,9 @@ import { SidebarMobComponent } from './sidebar-mob/sidebar-mob.component';
     SidebarMobComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLink,
+    RouterLinkActive
   ],
   exports: [
     SidebarComponent,

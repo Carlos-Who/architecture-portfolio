@@ -27,7 +27,7 @@
 }
 
 .main-container {
-  //position: relative;
+  //position: relative; // <- THis property is in testing mode
   max-width: 100vw; // <- THis property is in testing mode
   max-height: 100vh;
   //padding: 0 1.6em;
@@ -53,20 +53,35 @@ p {
 
 
 .phantom-container {
-  //position: absolute;
-  position: sticky;
+  position: static;
   top: -10px;
   //width: 100%;
-  height: 95px;
+  height: $phantom-container-size-mob;
   filter: blur(5px);
-  z-index: 2;
+  z-index: 22;
   background: rgb(21,21,23);
   background: linear-gradient(180deg, rgba(21,21,23,1) 59%, rgba(21,21,23,0.9444152661064426) 91%, rgba(0,0,0,0) 100%);
+  //background-color: teal;
 }
 
 
-@media screen and (min-width: 1024px) {
 
+/*-----------------------------------------------------------.
+|                       - RESPONSIVE -                       |
+'-----------------------------------------------------------*/
+
+// » Tablet
+@media only screen and (min-width: 500px) {
+
+}
+
+// » Tablet (Large)
+@media only screen and (min-width: 600px) {
+
+}
+
+// » Laptop [-Small-]
+@media only screen and (min-width: 1024px) {
   .app-sidebar-mob {
     display: none;
     visibility: hidden;
@@ -74,10 +89,35 @@ p {
   .app-sidebar {
     display: block;
   }
+  .phantom-container {
+    height: $phantom-container-size-desk;
+  }
+}
+
+// » Laptop (13" Approx)
+@media only screen and (min-width: 1220px) {
 
 }
 
+// » Laptop (15" Approx)
+@media only screen and (min-width: 1440px) {
 
+}
+
+// » Laptop (16" Approx)
+@media only screen and (min-width: 1650px) {
+
+}
+
+// » Desktop (Medium)
+@media only screen and (min-width: 1900px) {
+
+}
+
+// » Desktop (Large)
+@media only screen and (min-width: 2500px) {
+
+}
 
 
 
