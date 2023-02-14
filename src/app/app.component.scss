@@ -53,11 +53,11 @@ p {
 
 
 .phantom-container {
-  position: static;
+  position: sticky;
   top: -10px;
   //width: 100%;
   height: $phantom-container-size-mob;
-  filter: blur(5px);
+  //filter: blur(10px);
   z-index: 22;
   background: rgb(21,21,23);
   background: linear-gradient(180deg, rgba(21,21,23,1) 59%, rgba(21,21,23,0.9444152661064426) 91%, rgba(0,0,0,0) 100%);

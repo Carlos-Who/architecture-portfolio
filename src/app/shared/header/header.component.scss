@@ -1,0 +1,56 @@
+@use "./src/scss/theme/dark-theme.scss" as *;
+
+
+// No modificar margen abajo y modificarlo en el contenedor de cada vista diferente
+
+.portfolio-header-desk {
+  width: 100%;
+  //padding-top: 1em;
+  padding: 1em 0;
+  //border: 1px solid #14dcd5;
+}
+
+.breadcrumbs-container {
+  margin-bottom: .4rem;
+}
+.breadcrumbs-container ul {
+  display: inline-flex;
+  background-color: #252627;
+}
+
+.breadcrumb-item {
+  display: block;
+  color: #b0b0b0;
+  font-family: $font-secondary;
+  font-size: 1rem;
+  padding: .5em 1em;
+
+  &.breadcrumb-symbol {
+    color: #bc9a68;
+    padding: .5em .3em;
+    font-weight: 600;
+  }
+}
+
+.portfolio-title-desk {
+  color: $titles-primary-clr;
+  font-family: $font-primary;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  .portfolio-header-desk {
+    width: 100%;
+    //padding-top: 1em;
+    padding: 1em 10%;
+    //border: 1px solid #14dcd5;
+  }
+}
+
+
+
+
+

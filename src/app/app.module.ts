@@ -14,7 +14,7 @@ import {PortfolioModule} from "./portfolio/portfolio.module";
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    PortfolioModule
+    PortfolioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

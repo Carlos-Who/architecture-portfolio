@@ -19,21 +19,21 @@ export class SidebarMobComponent {
   public onClick(event: MouseEvent): void {
     if (!this.sideBarMenu.nativeElement.contains(event.target) && !this.MenuButton.nativeElement.contains(event.target) ) {
       this.menuIsOpen = false;
-      this.tl.reverse();
-      this.tl2.reverse();
+      this.tl.timeScale(2.5).reverse();
+      this.tl2.timeScale(3).reverse();
     }
   }
 
   toggleMenu() {
     if(!this.menuIsOpen) {
-      this.tl2.play();
-      this.tl.play();
+      this.tl2.timeScale(1).play();
+      this.tl.timeScale(1).play();
       this.menuIsOpen = true;
       return;
     }
     this.menuIsOpen = false;
-    this.tl.reverse();
-    this.tl2.reverse();
+    this.tl.timeScale(2.5).reverse();
+    this.tl2.timeScale(2).reverse();
   }
 
   ngOnInit(): void {

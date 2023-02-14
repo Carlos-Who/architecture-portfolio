@@ -4,6 +4,7 @@ import {HomeComponent} from "./portfolio/home/home.component";
 import {PortfolioComponent} from "./portfolio/portfolio/portfolio.component";
 import {AboutComponent} from "./portfolio/about/about.component";
 import {ContactComponent} from "./portfolio/contact/contact.component";
+import {ProjectsComponent} from "./portfolio/projects/projects/projects.component";
 
 const routes: Routes = [
   {
@@ -13,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: "portafolio",
-    component: PortfolioComponent
+    component: ProjectsComponent
   },
   {
     path: "acerca-de-mi",

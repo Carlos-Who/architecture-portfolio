@@ -1,0 +1,79 @@
+
+<!-- Mobile Version -->
+<div class="portfolio-container-mob">
+
+<!--  <header class="portfolio-header-mob">-->
+<!--    <h1 class="portfolio-title-mob">Projects</h1>-->
+<!--  </header>-->
+  <app-header [value]="title"></app-header>
+
+<!--  <swiper-container #car [config]="config" class="mySwiper" init="false">-->
+
+  <swiper-container class="mySwiper"
+                    thumbs-swiper=".mySwiper2"
+                    loopedSlides="1"
+                    loop-prevents-sliding="true"
+                    loop="true"
+                    space-between="10"
+                    navigation="true"
+                    hash-navigation-watch-state="true"
+                    reverse="true"
+                    slides-per-view="1">
+
+    <swiper-slide *ngFor="let item of projectsx">
+      <article class="card-mob">
+        <a href="#">
+          <img [src]="item.image"/>
+        </a>
+        <div class="card-content-mob">
+
+          <header class="card-header-mob">
+            <h3 class="card-title-mob">{{ item.project_name }}</h3>
+            <h5 class="card-subtitle-mob">{{ item.company_name }}</h5>
+            <hr class="style-two">
+          </header>
+
+          <p  class="card-description-mob">{{ item.excerpt }}</p>
+          <a class="card-link-mob">View Project</a>
+        </div>
+      </article>
+    </swiper-slide>
+
+  </swiper-container>
+
+</div>
+
+
+
+<!-- Desktop Version -->
+<div class="portfolio-container-desk  animate__animated animate__fadeInLeft">
+
+  <app-header [value]="title"></app-header>
+
+  <div class="projects-section">
+
+    <div class="grid-projects-container">
+      <figure *ngFor="let item of projectsx">
+        <a href="#" class="proyect-link">
+
+          <div class="thumbnail">
+            <div class="thumbnail-info">
+              <div class="glass-container">
+                <h3 class="thumbnail-title">{{ item.project_name }} <br> <span class="company-tag">| One & Only</span></h3>
+              </div>
+
+            </div>
+            <img [src]="item.image" alt="" oncontextmenu="return false;">
+          </div>
+
+        </a>
+      </figure>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
